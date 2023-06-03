@@ -8,7 +8,7 @@ import ToggleSwitch from './components/ThemeMode/ToggleSwitch';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import { ThemeContext,  } from './ThemeContext';
 import { useContext,  } from 'react';
-
+import { CardContext } from './components/ShopingCart/CardContext';
 // CSS Imports
 import './Styles/App.css';
 import './Styles/Cart.css';
@@ -48,7 +48,8 @@ function App() {
   const handleNavigation = (path) => {
     navigate(path); // Перенаправление на указанный путь
   };
-
+  
+  const { cartItems } = useContext(CardContext);
   return (
 
     <div >

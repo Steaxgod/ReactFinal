@@ -12,22 +12,49 @@
     flex-direction: column;
     background-color: #081014;
     width: 60%;
-    height: 530px;
+    height: auto;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 55px;
   }
   
   .itemsPurch {
-    background-color: #4e4e4e;
-    border: 1px solid black;
     border-radius: 25px;
     width: 300px;
-    height: 100px;
     margin: 5px;
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .itemsPurch ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  
+  .itemsPurch li {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    width: 350px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+  
+
+  .itemsPurch li img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .itemsPurch li button {
+    margin-left: 10px;
   }
   
   .heading {
@@ -38,8 +65,26 @@
   .Error {
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
     font-size: 40px;
     margin-top: 5px;
-    color: red; 
+    color: red;
   }
+
+  .Del {
+    background-color: transparent;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none; 
+    cursor: pointer; 
+  }
+  
+  .Del img {
+    width: 24px;
+    height: 24px;
+  }
+  
