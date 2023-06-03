@@ -13,18 +13,18 @@ interface CardContextType {
 
 export const CardContext = createContext<CardContextType>({
   cartItems: [],
-  addToCart: () => {}
+  addToCart: () => {},
 });
 
 interface CardProviderProps {
   children: ReactNode;
 }
 
-const CardProvider: React.FC<CardProviderProps> = ({ children }) => {
+export const CardProvider: React.FC<CardProviderProps> = ({ children }) => {
   const [cartItems, setCartItems] = useState<Item[]>([]);
 
   const addToCart = (item: Item) => {
-    setCartItems(prevItems => [...prevItems, item]);
+    setCartItems((prevItems) => [...prevItems, item]);
   };
 
   return (
@@ -33,5 +33,3 @@ const CardProvider: React.FC<CardProviderProps> = ({ children }) => {
     </CardContext.Provider>
   );
 };
-
-export default CardProvider;
