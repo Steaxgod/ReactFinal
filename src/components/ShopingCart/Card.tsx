@@ -32,8 +32,9 @@ const Card: React.FC = () => {
                 if (item) {
                   return (
                     <li key={itemId} style={{ backgroundColor: theme.containers }}>
-                      <img src={item.image} alt={item.name} />
-                      <p>{item.name}</p>
+                      <img className='pict' src={item.image} alt={item.name} />
+                      <p className='nm'>{item.name}</p>
+                      <p className='pr'>${item.price}</p>
                       (#️{quantity})
                       
                       <button className="Del" onClick={() => handleRemoveFromCart(itemId)}>

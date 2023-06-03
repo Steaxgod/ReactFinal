@@ -63,6 +63,7 @@ function App() {
           </button>
           <button className="btnLink" onClick={() => handleNavigation('/card')}>
             <img src="src/img/shopping-online (1).png" className="linkIcons" />
+            <p className='emIt'>{cartItems.length}</p>
           </button>
         </div>
       </nav>
@@ -116,7 +117,7 @@ function Home()
     </div>
     {/* Video holder */}
     <div className='video'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/WDZZDp_Bjl4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9ggHqDPmFq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
   </div>
     );

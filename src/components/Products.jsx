@@ -16,7 +16,9 @@ function Products() {
   const handleAddToCart = (item) => {
     const newItem = {
       id: item.id,
-      name: item.title
+      name: item.title,
+      image: item.image,
+      price: item.price,
     };
     addToCart(newItem);
   };

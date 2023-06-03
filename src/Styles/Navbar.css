@@ -43,3 +43,11 @@ nav{
     height: 20px;
   }
   
+.emIt {
+  background-color: red;
+  color: white;
+  border-radius: 30%;
+  border: black solid 1px;
+  width: 15px;
+  height: 15px;
+}
