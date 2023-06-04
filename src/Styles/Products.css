@@ -1,0 +1,72 @@
+
+.listHolder {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.bodyList {
+    background-color: #081014;
+    border: black solid 1px;
+    border-radius: 80px;
+
+    width: 60%;
+}
+
+.listH1 {
+
+    color: white;
+    text-align: center;
+    font-size: 64px;
+
+}
+
+.itemsList {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 25px;
+}
+
+.itemnum {
+    background-color:#4E4E4E;
+    border: black solid 1px;
+    border-radius: 42px;
+
+    width: 350px;
+    height: 200px;
+    margin: 5px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.imgs {
+    margin-top: 25px;
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    
+}
+
+
+
+.itemLink {
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.btnLink {
+    display: flex;
+    justify-content: end;
+    margin-top: -25px;
+
+  }
+  
+  .btnLink:hover {
+        opacity: 50%;
+}

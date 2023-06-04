@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #root {
+    height: 100%;
+  }
+
+nav{
+    background-color: #081014;
+    height: 65px;    
+}
+
+.NavLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+  }
+  
+  .btnLink {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .linkIcons {
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .themeButton {
+    margin-left: auto;
+  }
+  
+  .themeChange {
+    width: 40px;
+    height: 20px;
+  }
+  
+.emIt {
+  background-color: red;
+  color: white;
+  border-radius: 30%;
+  border: black solid 1px;
+  width: 15px;
+  height: 15px;
+}
